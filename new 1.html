@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Horoskop - zad.4</title>
+  
+  <style>
+  #wyglad
+  {text-align: center; background-color: #999999;
+   width: 1000px; margin: auto;
+   border: 1px solid black; margin-top: 50px;}
+  
+  #wyglad2
+  {font-size: 25px;}
+  
+  #wyglad3
+  {font-size: 20px; margin: 20px;} 
+  </style>
+  
+  </head>
+  <body style="background-color: #303030">
+  
+  <script>
+  
+  document.write("<div id='wyglad'>");
+  document.write("<div id='wyglad2'>");
+  document.write("<p>Twój znak zodiaku i tekst horoskopu znajdują się poniżej:</p>");
+  document.write("</div>");
+  var dzien=parseInt(prompt("Podaj dzień urodzenia: "));
+  var miesiac=parseInt(prompt("Podaj numer miesiąca urodzenia: "));
+  
+  document.write("<div id='wyglad3'>");
+  if((dzien>=21 && dzien<=31 && miesiac==3) || (dzien>=1 && dzien<=19 && miesiac==4))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/baran.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Barana są inteligentne, pracowite i posiadają duży dar wymowy. Obdarzeni cechami dobrymi, ale i cechami, które nie zjednują im przyjaciół. Niektórych cechuje nadmierna impulsywność, wojownicze skłonności, bezwzględność i niekiedy mściwość. Cechy pozytywne to przede wszystkim to, że są uczynni, szlachetni, uczciwi i oddani tym, którzy je rozumieją. Są uprzejmi, lojalni, odważni, szczerzy i rozrzutni. Towarzyscy, ale zawsze niezależni. Lubią podróżować. Optymizm i niespożyta energia pobudza ich do nieustannego działania. Nie znoszą połowiczności w swoich działaniach, ale zdarza się też, że przeceniają swoje siły. Często zapadają na schorzenia głowy.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+  
+  else if((dzien>=20 && dzien<=30 && miesiac==4) || (dzien>=1 && dzien<=22 && miesiac==5))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/byk.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Byka są cierpliwe i ogólnie życzliwe do innych osób. Są dobrymi organizatorami i wytrwałymi pracownikami. Cechuje ich upartość, nieugiętość, a nawet zaciętość. Ambitni, chociaż ambicje często przerastają ich możliwości. Są egocentrykami, ale i ludźmi nastawionymi do innych nieufnie i często zamkniętymi w sobie. Niejednokrotnie bywają zazdrośni i zdolni do tyranizowania innych. Są estetami kochającymi wszystko co piękne. Lubią podróże i pieniądze. Często zapadają na schorzenia gardła i krtani.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+  
+  else if((dzien>=23 && dzien<=31 && miesiac==5) || (dzien>=1 && dzien<=21 && miesiac==6))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/bliznieta.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Bliźniąt często cechuje brak skupienia, niecierpliwość, znudzenie i zmęczenie. Niejednokrotnie zmieniają wygłoszone poglądy i zdania. Posiadają lotny umysł i obrotność, lecz na wszystko patrzą z dystansem. Inteligentni, zdolni do szybkich porównań i uogólnień. Dobrzy dyplomaci. Wrażliwi i życzliwi, są również krasomówcami, korzystającymi niejednokrotnie z ostrego dowcipu. Są \"wygadani\" i dlatego pasją ich jest udział w każdej dyskusji. Posiadają wielorakie zainteresowania, ale zbytnio się w nie zagłębiają. Są obdarzeni talentem artystycznym. Dobroduszni, uprzejmi i życzliwi. Cieszy ich aprobata i podziw. Często zapadają na schorzenia ramion.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+ 
+  else if((dzien>=22 && dzien<=30 && miesiac==6) || (dzien>=1 && dzien<=22 && miesiac==7))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/rak.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Raka są trochę egoistami żądnymi sławy. Nie lubią krytyki i bardzo przejmują się opinią otoczenia. Ambitne, wytrwałe i cierpliwe. Uparci w swoich poglądach. Prowadzą życie energiczne, pracują aktywnie zawodowo. Ich decyzje są zawsze przemyślane, przeanalizowane i odpowiedzialne. Mają wyjątkową pamięć. Chociaż sympatyczni, są jednak kapryśni i zmienni, nie lubią iść na ustępstwa. W stosunkach z ludźmi przejawiają duży instynkt, który ostrzega ich przed niebezpieczeństwami. Lubią ciepło domowego ogniska, wzajemne zrozumienie i harmonie współżycia. Mają bogate życie wewnętrzne. Posiadają uzdolnienia do języków obcych. Często zapadają na schorzenia piersi.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+  
+  else if((dzien>=23 && dzien<=31 && miesiac==7) || (dzien>=1 && dzien<=22 && miesiac==8))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/lew.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Lwa są impulsywni, niejednokrotnie agresywni, a chcąc osiągnąć cel nie liczą się ze stroną przeciwną. niejednokrotnie cechuje ich upór, zawziętość, pycha i bezwzględność. Działają pod wpływem chwili i nastroju. Z tego powodu często ujawniają wyraźnie swoje sympatie i nienawiści, wtedy bywają aroganccy, szorstcy i odpychający. Odznaczają się silną wolą w dążeniu do osiągnięcia autorytetu i władzy. Energiczne i przedsiębiorcze, zdecydowane w czynach i w słowach. Inteligentne, wyrozumiałe dążą do osiągnięcia wytyczonego celu. Bywają również mili i serdeczni.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+ 
+  else if((dzien>=24 && dzien<=31 && miesiac==8) || (dzien>=1 && dzien<=22 && miesiac==9))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/panna.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Panny niejednokrotnie cechuje nadmierna oszczędność i egocentryzm. Bywają przemądrzałe. W warunkach niesprzyjających potrafią być krytyczni, przebiegli i apodyktyczni, mogą nawet ulegać zazdrości i plotkarstwu. Są pilni, systematyczni, dokładni, staranni i uczciwi w działaniu. każdą sytuację. Lubią być doceniani za swoją pracę. Ich szybkie, logiczne i jasne myślenie, Umiejętność korzystania z faktów oraz krytyczna ocena zjawisk i ludzi umożliwiają im wszechstronną orientację w codziennym życiu. Często zapadają na schorzenia układu trawienia.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+ 
+  else if((dzien>=23 && dzien<=30 && miesiac==9) || (dzien>=1 && dzien<=22 && miesiac==10))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/waga.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Wagi nie znoszą kłopotów i przeciwności. Mając duże wymagania, żyją w ciągłym niepokoju i niepewności. Ciągle pragną poklasku i uznania. Często szukają przyjaźni, a kiedy ją znajdą, płacą za nią przyjaźnią i wiernością. Dla miłości potrafią zrezygnować nawet z własnej kariery życiowej. Odznaczają się poczuciem sprawiedliwości oraz wolnością poglądów. Są uprzejmi, dyplomaci o ujmującym wyglądzie. Dobrzy organizatorzy i staranni pracownicy. Cieszą się dużym smakiem artystycznym. Pełni chęci do wcielania w życie własnych ideałów estetycznych. Często zapadają na schorzenia nerek.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+ 
+  else if((dzien>=23 && dzien<=31 && miesiac==10) || (dzien>=1 && dzien<=21 && miesiac==11))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/skorpion.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Skorpiona z reguły są pesymistami, podejrzliwi i nieufni. W zdobyciu jakiegoś wytyczonego celu pomaga im wojowniczy charakter, ostry język oraz wrodzony spryt. Nie lubią cudzej przewagi nad sobą. Nie znoszą tchórzostwa i lizusostwa. Są inteligentne, spostrzegawcze, posiadają dużą wyobraźnię i odznaczają się dobrą pamięcią. Mają dar rozpoznawania cech charakteru. Posiadają umiejętność planowania, a ich siła życiowa i odwaga pozwala im walczyć aż do zwycięstwa. Często zapadają na schorzenia płciowe.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+ 
+  else if((dzien>=22 && dzien<=30 && miesiac==11) || (dzien>=1 && dzien<=21 && miesiac==12))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/strzelec.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Strzelca są nienasyceni w chęci poznawania ludzi i świata. Nienawidzą głupoty, nie ulegają sugestii otoczenia. Ich życiowa aktywność, impulsywność, często niedyskrecja rodzi konflikty z otoczeniem. W dyskusjach nad niesprawiedliwymi sugestiami są niezwyciężeni. Mają dużą dozę intuicji, która nie pozwala im mylić się w wydawanych przez nich sądach. Są inteligentne, przewidujące, posiadają zmysł obserwacji i analizy przyczyn zjawisk. Dumni i świadomi swojej wartości i godności osobistej, są równocześnie skłonni do poświęceń. Pełni radości życia. Powinni unikać hazardu. Często zapadają na schorzenia ud.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+ 
+  else if((dzien>=22 && dzien<=31 && miesiac==12) || (dzien>=1 && dzien<=19 && miesiac==1))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/koziorozec.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Koziorożca posiadają bardzo złożony charakter. Z pozoru mało serdeczni i chłodni, gdyż nie potrafią ujawniać swojej wrażliwości i uczuciowości. Przyjaciół mają niewielu, wśród nich są tacy, którzy dobrze znają wartość Koziorożca. Innych zraża jego chłód i trudność w nawiązywaniu z nim bliższych kontaktów, niekiedy jego apatia, małomówność i zamknięcie się w sobie. Są ambitni, solidni, i niestrudzenie dążący do wytyczonego sobie celu. W trudnych chwilach, można na nich liczyć. Często zapadają na schorzenia reumatyczne.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+ 
+  else if((dzien>=20 && dzien<=31 && miesiac==1) || (dzien>-1 && dzien<=18 && miesiac==2))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/wodnik.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Wodnika są niecierpliwi, krótkowzroczni i nierozsądni. Te cechy charakteru powodują, że niejednokrotnie otrzymują od losu nagłe uderzenia, które załamują je psychicznie. Niektórzy małostkowi, chociaż w przyjaźniach życzliwi i wierni. Marzyciele z brakiem wyobraźni i zdrowego rozsądku. Cechuje ich pogoda ducha, wrażliwość i życzliwość. Są wrażliwi na krzywdy ludzkie. Cieszą się ludzką przyjaźnią. Inteligentni, dociekliwi. Często zapadają na schorzenia łydek.<hr style=\"background: black; border: 0px; height: 1px;\"><input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/>");
+  
+  else if((dzien>=19 && dzien<=29 && miesiac==2) || (dzien>=1 && dzien<=20 && miesiac==3))
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\"><img src='obrazki/ryby.jpg'><hr style=\"background: black; border: 0px; height: 1px;\"> Osoby urodzone pod znakiem Ryb są chwiejni i uparci. Są niezdecydowane, sentymentalne, onieśmielone w większym towarzystwie. Wygórowane ambicje i aspiracje dostarczają im życiowych zawodów i wówczas wybierają życie w izolacji. Ich marzycielstwo niejednokrotnie jest przyczyną zbytniego sentymentalizmu. Małoduszni i wrażliwi. Cechuje je wyrozumiałość i współczucie dla nieszczęśliwych. Mają przekonanie, że to co robią jest dobre i właściwe. Są uprzejme, miłe wrażliwe i łagodne. Entuzjastycznie nastawieni do ideałów, potrafią się zdobyć na wyrzeczenia. Często zapadają na schorzenia stóp.<hr style=\"background: black; border: 0px; height: 1px;\"><button onclick=location=URL>Odśwież stronę</button>");
+  else
+  document.write("<hr style=\"background: black; border: 0px; height: 1px;\">Podałeś/łaś nieprawidłowy numer dnia lub dzień miesiąca!<br>Spróbuj ponownie! <input type=\"button\" value=\"Odśwież stronę\" onClick=\"location.reload()\"/><hr style=\"background: black; border: 0px; height: 1px;\">");
+  document.write("</div>");
+ 
+  document.write("</div>");
+  </script>
+
+  </body>
+  </html>
